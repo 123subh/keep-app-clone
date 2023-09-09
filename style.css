@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #e1eaed;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    width: 100vw;
+    background-color: #f1c40f;
+    height: 60px;
+    color: #282936;
+    box-shadow: 0px 10px 16px rgba(248, 247, 247);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    line-height: 1.8;
+    padding: 0 10px;
+}
+
+.add:active {
+    transform: scale(0.98);
+}
+
+.btn {
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+button {
+    position: relative;
+    border: 0;
+    background: transparent;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    background: #f1c12e;
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    transition: all 0.45s cubic-bezier(0.39, 0.575, 0.565, 1);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .btn-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 0 1.85rem;
+    padding: 0.75rem 0rem;
+    text-transform: uppercase;
+}
+
+button.learn-more .circle .icon {
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* transition:all 0.45s cubic-bezier(0.65, 0, 0.076, 1) ; */
+}
+
+button.learn-more .circle .icon.arrow {
+    background: none;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.5rem;
+    width: 1.125rem;
+    height: 0.125rem;
+}
+
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    left: 0.46rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid white;
+    border-right: 0.125rem solid white;
+    transform: rotate(45deg);
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: white;
+    transform: translate(1rem, 0);
+}
+
+
+button:hover .btn-text {
+    color: #f4f7f8;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.note {
+    background: #fff;
+    height: 200px;
+    width: 375px;
+    margin: 10px 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 7rem;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.note .operation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+
+.operation button {
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    border: none;
+}
+
+.text {
+    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+.fa-edit,
+.fa-trash-alt {
+    color: white;
+    background-color: rgb(6, 110, 6);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-trash-alt {
+    background-color: tomato;
+}
+
+.fa-trash-alt:hover {
+    color: tomato;
+    background-color: white;
+    filter: drop-shadow(0px 10px 8px rgb(218, 218, 218));
+}
+
+.fa-edit:hover {
+    color: rgb(6, 110, 6);
+    background-color: white;
+    filter: drop-shadow(0px 10px 8px rgb(218, 218, 218));
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* #style-6::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb {
+    background-color: #F90;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+} */
